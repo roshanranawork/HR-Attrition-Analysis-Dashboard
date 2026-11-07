@@ -1,13 +1,4 @@
 --
--- PostgreSQL database dump
---
-
-\restrict rzW2ZSocLugqblHmz36KA5V3dL97UmZhJR0rDU6t19Qg2aWLcMbTgbk3eHgvzLA
-
--- Dumped from database version 18.6
--- Dumped by pg_dump version 18.6
-
--- Started on 2026-11-07 17:33:34
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -24,11 +15,6 @@ SET row_security = off;
 SET default_tablespace = '';
 
 SET default_table_access_method = heap;
-
---
--- TOC entry 219 (class 1259 OID 98322)
--- Name: hr_attrition; Type: TABLE; Schema: public; Owner: postgres
---
 
 CREATE TABLE public.hr_attrition (
     "Employee_ID" integer,
@@ -60,9 +46,7 @@ CREATE TABLE public.hr_attrition (
 ALTER TABLE public.hr_attrition OWNER TO postgres;
 
 --
--- TOC entry 5001 (class 0 OID 98322)
--- Dependencies: 219
--- Data for Name: hr_attrition; Type: TABLE DATA; Schema: public; Owner: postgres
+--
 --
 
 COPY public.hr_attrition ("Employee_ID", "Age", "Attrition", "Business_Travel", "Department", "Distance_From_Home", "Education", "Environment_Satisfaction", "Gender", "Salary", "Job_Involvement", "Job_Level", "Job_Role", "Job_Satisfaction", "Marital_Status", "Number_of_Companies_Worked_previously", "Overtime", "Salary_Hike_in_percent", "Total_working_years_experience", "Work_life_balance", "No_of_years_worked_at_current_company", "No_of_years_in_current_role", "Years_since_last_promotion") FROM stdin;
